@@ -1,0 +1,8 @@
+{
+  "name": "clearpage",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first dyslexia-friendly reading assistant powered locally by Ollama.",
+  "scripts": {"dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"", "dev:server": "npm --prefix server run dev", "dev:client": "npm --prefix client run dev", "build": "npm --prefix client run build", "start": "npm --prefix server start", "test:images": "node tests/run-samples.mjs"},
+  "devDependencies": {"concurrently": "^9.1.2"}
+}
